@@ -360,3 +360,10 @@ updateSummary();
 </script>
 </body>
 </html>
+const raw = localStorage.getItem('workspaceChecklistData');
+if (raw) {
+  // Небольшая задержка, чтобы данные успели загрузиться
+  setTimeout(() => {
+    lockAllInputs();
+  }, 100);
+}

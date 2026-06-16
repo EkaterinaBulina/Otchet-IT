@@ -347,7 +347,10 @@ document.addEventListener('change', (e) => {
 });
 document.getElementById('saveBtn').addEventListener('click', () => {
   saveAll();
-  alert('Результаты сохранены. Можно переходить к шаблону отчёта.');
+  
+  lockAllInputs();
+  
+  alert('Результаты сохранены. Изменения больше недоступны.');
 });
 ['strengths','problems','improvements'].forEach(id => {
   document.getElementById(id).addEventListener('input', saveAll);

@@ -347,10 +347,7 @@ document.addEventListener('change', (e) => {
 });
 document.getElementById('saveBtn').addEventListener('click', () => {
   saveAll();
-  
-  lockAllInputs();
-  
-  alert('Результаты сохранены. Изменения больше недоступны.');
+  alert('Результаты сохранены. Можно переходить к шаблону отчёта.');
 });
 ['strengths','problems','improvements'].forEach(id => {
   document.getElementById(id).addEventListener('input', saveAll);
@@ -360,10 +357,3 @@ updateSummary();
 </script>
 </body>
 </html>
-const raw = localStorage.getItem('workspaceChecklistData');
-if (raw) {
-  // Небольшая задержка, чтобы данные успели загрузиться
-  setTimeout(() => {
-    lockAllInputs();
-  }, 100);
-}

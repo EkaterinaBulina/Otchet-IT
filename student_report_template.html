@@ -74,26 +74,26 @@
       <div class="grid">
         <div class="card">
           <h3>ФИО / автор</h3>
-          <input type="text" id="studentName" class="field" placeholder="Введите имя автора" />
+          <input type="text" id="studentName" class="field" placeholder="Булина Екатерина Евгеньевна" />
         </div>
         <div class="card">
           <h3>Объект анализа</h3>
-          <input type="text" id="objectName" class="field" placeholder="Например: домашнее рабочее место, аудитория, офисный стол" />
+          <input type="text" id="objectName" class="field" placeholder="Домашнее рабочее место" />
         </div>
       </div>
       <div style="margin-top:14px;">
         <h3>Назначение рабочего пространства</h3>
-        <textarea id="purpose" placeholder="Кратко опишите, для каких задач используется это место: учёба, документы, аналитика, программирование, графика и т.д."></textarea>
+        <textarea id="purpose" placeholder="Учёба"></textarea>
       </div>
     </section>
 
     <section class="section">
       <h2>2. Итоги чек-листа</h2>
       <div class="summary">
-        <div class="sum-card"><strong>Набрано баллов</strong><div class="big" id="sum">—</div></div>
-        <div class="sum-card"><strong>Максимум</strong><div class="big" id="max">—</div></div>
-        <div class="sum-card"><strong>Процент</strong><div class="big" id="percent">—</div></div>
-        <div class="sum-card"><strong>Результат</strong><div id="interp" style="margin-top:8px; font-weight:700;">—</div></div>
+        <div class="sum-card"><strong>Набрано баллов</strong><div class="big" id="sum">71</div></div>
+        <div class="sum-card"><strong>Максимум</strong><div class="big" id="max">92</div></div>
+        <div class="sum-card"><strong>Процент</strong><div class="big" id="percent">77%</div></div>
+        <div class="sum-card"><strong>Результат</strong><div id="interp" style="margin-top:8px; font-weight:700;">Хорошая организация, есть точки для улучшения</div></div>
       </div>
     </section>
 
@@ -102,16 +102,18 @@
       <div class="grid">
         <div class="card">
           <h3>Сильные стороны</h3>
-          <textarea id="strengths" class="small" placeholder="Перенесите из чек-листа или сформулируйте заново."></textarea>
+          <textarea id="strengths" class="small" placeholder="Стол достаточно свободный, нет лишних устройств, освещение не бликует."></textarea>
         </div>
         <div class="card">
           <h3>Проблемные зоны</h3>
-          <textarea id="problems" class="small" placeholder="Опишите основные ограничения и слабые места."></textarea>
+          <textarea id="problems" class="small" placeholder="Экран небольшой, мало ОЗУ, не очень удобная посадка."></textarea>
         </div>
       </div>
       <div style="margin-top:14px;">
         <h3>Три улучшения с наибольшим эффектом</h3>
-        <textarea id="improvements" placeholder="Укажите конкретные изменения и ожидаемый результат."></textarea>
+        <textarea id="improvements" placeholder="1. Докупить внешний монитор (24″) + подставку/кронштейн
+2. Заменить HDD на SSD и увеличить ОЗУ до 16 ГБ (если возможно)
+3. Организовать кабели и поднять ноутбук на уровень глаз (подставка)"></textarea>
       </div>
     </section>
 
@@ -120,16 +122,25 @@
       <div class="grid">
         <div class="card">
           <h3>Что можно улучшить без существенных затрат</h3>
-          <textarea id="noBudget" class="small" placeholder="Например: поднять монитор, изменить расположение клавиатуры, организовать кабели, переставить технику."></textarea>
+                    <textarea id="noBudget" class="small" placeholder="- Поднять ноутбук до уровня глаз
+- Отодвинуть лампу, чтобы не грела ноутбук
+- Настроить стул по высоте (если регулируется)
+- Использовать внешнюю клавиатуру (если есть)" style="height: 177px;"></textarea>
         </div>
         <div class="card">
           <h3>Что потребует бюджета, но даст заметный эффект</h3>
-          <textarea id="withBudget" class="small" placeholder="Например: заменить монитор, увеличить ОЗУ, поставить SSD, улучшить освещение, сменить стол или кресло."></textarea>
+          <textarea id="withBudget" class="small" placeholder="- Внешний монитор 24″ (Full HD) 
+- SSD 480–512 ГБ 
+- Планка ОЗУ 8 или 16 ГБ 
+- Простая подставка для ноутбука"></textarea>
         </div>
       </div>
       <div style="margin-top:14px;">
         <h3>Обоснование проекта</h3>
-        <textarea id="justification" placeholder="Объясните, почему предложенные улучшения полезны с точки зрения эргономики, техники, производительности, срока службы и рациональности закупки."></textarea>
+        <textarea id="justification" placeholder="Эргономика — снизит нагрузку на шею и глаза
+Производительность — учёба перестанет тормозить
+Срок службы — ноутбук будет меньше греться
+Рациональность — вместо нового ПК дешёвое продление жизни старого ноутбука"></textarea>
       </div>
     </section>
 
@@ -137,14 +148,21 @@
       <h2>5. Визуальные материалы</h2>
       <p class="lead">Здесь можно вставить реальные фотографии, схему, референсы или оставить место под изображения перед сдачей.</p>
       <div class="gallery">
-        <div class="ph">Место для изображения 1</div>
-        <div class="ph">Место для изображения 2</div>
+        <div class="ph">https://sun9-15.userapi.com/s/v1/ig2/BdTabPeXAwPNxkb3PKvXkHDj3wM7x-xJ-muNXiggzhl47kgqOeovjl83Jy6oNfpuPYK3UJI02A6VXmSwWwXubtNL.jpg?quality=95&as=32x24,48x36,72x54,108x81,160x120,240x180,360x270,480x360,540x405,640x480,720x540,1080x810,1195x896&from=bu&u=EIbAxkYS_09VYZB6R7ARG4-c1jwZ6BBDbZOS4yHMn3k&cs=1195x0" alt="Мое изображение"</div>
+        <div class="ph">https://sun9-56.userapi.com/s/v1/ig2/X2h0rSUdXQuKQ9h5RciQskC8qP5uIqiYt6caMZrsCANrxrwzxjFjkTYJiMur7_nh53ZSoUazUI1Pz7MgI2FgrOvX.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1080x1080,1254x1254&from=bu&u=zcogTQo3wnN-_CoCK1vKreAqxTMn1qNfBkbuwrA6RUs&cs=1254x0" alt="Изображение"</div>
       </div>
     </section>
 
     <section class="section">
       <h2>6. Итоговый вывод</h2>
-      <textarea id="finalConclusion" placeholder="Сформулируйте короткий вывод: насколько рабочее пространство соответствует задачам, какие у него главные достоинства, какие ограничения и какие улучшения являются наиболее рациональными."></textarea>
+      <textarea id="finalConclusion" placeholder="Рабочее место частично соответствует учебным задачам, но только при минимальной нагрузке.
+Главные достоинства: свободный стол, нет хлама.
+Ограничения: экран, память, диск, эргономика.
+Наиболее рациональные улучшения:
+→ внешний монитор
+→ SSD + ОЗУ 
+→ подставка и порядок проводов.
+При бюджете ~12–15 тыс. руб можно получить комфортное рабочее место без покупки нового компьютера."></textarea>
       <div class="note" style="margin-top:14px;"><strong>Совет:</strong> хороший вывод должен соединять наблюдения, баллы, смысловые выводы и реальные предложения по улучшению.</div>
     </section>
 
